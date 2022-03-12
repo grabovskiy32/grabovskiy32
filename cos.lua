@@ -752,7 +752,7 @@ misco:CreateButton("Export Stats Table", function() local StatCache = require(ga
 
 local extras = extrtab:CreateSection("Extras")
 extras:CreateButton("Hide nickname", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/nicknamespoofer.lua"))()end)
-extras:CreateButton("Boost FPS", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/fpsboost.lua"))()end)
+extras:CreateButton("Boost FPS", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/grabovskiy32/grabovskiy32/main/ha.lua"))()end)
 extras:CreateButton("Destroy Decals", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/destroydecals.lua"))()end)
 extras:CreateTextBox("Glider Speed", "", true, function(Value) local StatCache = require(game.ReplicatedStorage.ClientStatCache) local stats = StatCache:Get() stats.EquippedParachute = "Glider" local module = require(game:GetService("ReplicatedStorage").Parachutes) local st = module.GetStat local glidersTable = getupvalues(st) glidersTable[1]["Glider"].Speed = Value setupvalue(st, st[1]'Glider', glidersTable) end)
 extras:CreateTextBox("Glider Float", "", true, function(Value) local StatCache = require(game.ReplicatedStorage.ClientStatCache) local stats = StatCache:Get() stats.EquippedParachute = "Glider" local module = require(game:GetService("ReplicatedStorage").Parachutes) local st = module.GetStat local glidersTable = getupvalues(st) glidersTable[1]["Glider"].Float = Value setupvalue(st, st[1]'Glider', glidersTable) end)
